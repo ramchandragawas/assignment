@@ -1,1 +1,61 @@
+/* Resetting default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Optional: Set a custom font family */
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2rem; /* 75% larger than the default font size */
+}
+
+.section {
+    margin: 20px;
+    border: 1px solid #000;
+    background-color: #fff;
+    float: left;
+    width: calc(33.33% - 40px); /* Adjusted for margins */
+}
+
+.section-title {
+    position: relative;
+    background-color: #ffa500; /* Orange */
+    color: #fff;
+    font-size: 125%; /* 25% larger than the default font size */
+    padding: 5px 10px;
+    border-bottom: 1px solid #000;
+}
+
+.section-content {
+    padding: 20px;
+}
+
+/* Tablet and Mobile Styles */
+@media (max-width: 991px) {
+    .section {
+        width: calc(50% - 40px); /* Adjusted for margins */
+    }
+    .section:nth-child(3) {
+        clear: both;
+    }
+}
+
+@media (max-width: 767px) {
+    .section {
+        width: calc(100% - 40px); /* Adjusted for margins */
+        clear: both;
+    }
+}
 
